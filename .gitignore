@@ -227,3 +227,8 @@ __marimo__/
 
 # Old MLflow tracking folder
 mlruns/
+
+__pycache__/
+.venv/
+*.pyc
+.DS_Store
