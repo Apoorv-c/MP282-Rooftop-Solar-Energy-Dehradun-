@@ -1,0 +1,17 @@
+random_state: 42
+test_size: 0.2
+experiment_name: "MP282_Solar_Energy"
+
+models:
+  random_forest_100:
+    n_estimators: 100
+    max_depth: 10
+
+  random_forest_200:
+    n_estimators: 200
+    max_depth: 10
+
+  gradient_boosting:
+    n_estimators: 100
+    learning_rate: 0.05
+    max_depth: 3

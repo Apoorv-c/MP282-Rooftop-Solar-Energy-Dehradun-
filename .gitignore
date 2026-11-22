@@ -221,3 +221,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Mac system files
+.DS_Store
+
+# Old MLflow tracking folder
+mlruns/
