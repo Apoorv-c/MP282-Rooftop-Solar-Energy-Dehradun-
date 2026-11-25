@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mp282-solar-api
+  labels:
+    app: mp282-solar-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mp282-solar-api
+  template:
+    metadata:
+      labels:
+        app: mp282-solar-api
+    spec:
+      containers:
+        - name: solar-api
+          image: mp282-solar-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              name: http
