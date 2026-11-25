@@ -1,49 +1,39 @@
-
-group_id: "G058"
-problem_id: "MP282"
-
+group_id: G058
+problem_id: MP282
 data_issues:
   leaking_column:
     present: true
-    column: "meter_reading_kwh"
-
+    column: meter_reading_kwh
   unit_mixup:
     present: true
-    column: "sunshine_hours"
-    group_value: "Industrial"
+    column: sunshine_hours
+    group_value: Industrial
     factor: 60
-
   sentinel_value:
     present: true
-    column: "cloud_cover_pct"
+    column: cloud_cover_pct
     value: -1
     count: 56
-
   duplicate_rows:
     present: false
     count: null
-
   stuck_sensor:
     present: false
     column: null
     start_date: null
     end_date: null
-
   target_typos:
     present: false
     count: null
-
   spelling_variants:
     present: true
-    column: "roof_type"
+    column: roof_type
     true_levels: 3
-
 tracking:
-  experiment_name: null
-  best_run_id: null
-  registered_model_name: null
-  champion_version: null
-
+  experiment_name: MP282_Solar_Energy
+  best_run_id: e8ff007e1f4e442a9a74bea9a8d68dfa
+  registered_model_name: MP282_Solar_Energy_Model
+  champion_version: 2
 monitoring:
   psi:
     panel_area_m2: null
@@ -54,9 +44,9 @@ monitoring:
     cloud_cover_pct: null
   most_drifted_feature: null
   mae_by_group:
-    'Old City': null
-    'New Colony': null
-    'Industrial': null
+    Old City: null
+    New Colony: null
+    Industrial: null
   worst_served_group: null
   mae_v1_on_check: null
   mae_v2_on_check: null
