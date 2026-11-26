@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.dvc/
+.venv/
+venv/
+env/
+.env
+mlruns/
+*.db
+data/raw/*.csv
+data/processed/*.csv
+predictions/
+.pytest_cache/
+*.egg-info/
+.DS_Store
