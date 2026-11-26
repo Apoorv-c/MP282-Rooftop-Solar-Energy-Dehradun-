@@ -38,7 +38,7 @@ def test_health_returns_ok():
 
 
 # ------------------------------------------------------------------
-# /predict — happy path
+# /predict - happy path
 # ------------------------------------------------------------------
 def test_predict_valid_request_returns_prediction():
     r = client.post("/predict", json=VALID_PAYLOAD)
@@ -49,7 +49,7 @@ def test_predict_valid_request_returns_prediction():
 
 
 # ------------------------------------------------------------------
-# /predict — client rule 1: panel_area_m2 > 100 must get 422
+# /predict - client rule 1: panel_area_m2 > 100 must get 422
 # ------------------------------------------------------------------
 def test_predict_rejects_panel_area_above_100():
     payload = {**VALID_PAYLOAD, "panel_area_m2": 101.0}
@@ -58,7 +58,7 @@ def test_predict_rejects_panel_area_above_100():
 
 
 # ------------------------------------------------------------------
-# /predict — client rule 2: dust_days < 0 must get 422
+# /predict - client rule 2: dust_days < 0 must get 422
 # ------------------------------------------------------------------
 def test_predict_rejects_negative_dust_days():
     payload = {**VALID_PAYLOAD, "dust_days": -1.0}
@@ -67,7 +67,7 @@ def test_predict_rejects_negative_dust_days():
 
 
 # ------------------------------------------------------------------
-# /predict — extra field must get 422 (extra="forbid" in schema)
+# /predict - extra field must get 422 (extra="forbid" in schema)
 # ------------------------------------------------------------------
 def test_predict_rejects_extra_fields():
     payload = {**VALID_PAYLOAD, "unknown_field": "oops"}
