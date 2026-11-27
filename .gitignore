@@ -168,3 +168,8 @@ mlflow.db-wal
 
 # Test cache
 .pytest_cache/
+
+# Stage 4 local recovery backups
+mlflow.db.before_stage4_recovery
+mlruns.before_stage4_recovery/
+models/model_before_stage4_recovery.joblib

@@ -31,23 +31,23 @@ data_issues:
     true_levels: 3
 tracking:
   experiment_name: MP282_Solar_Energy
-  best_run_id: e8ff007e1f4e442a9a74bea9a8d68dfa
+  best_run_id: 9173091e21ae42bb8f9e95681ae923d6
   registered_model_name: MP282_Solar_Energy_Model
-  champion_version: 2
+  champion_version: 3
 monitoring:
   psi:
-    panel_area_m2: null
-    sunshine_hours: null
-    temp_c: null
-    dust_days: null
-    panel_age_yr: null
-    cloud_cover_pct: null
-  most_drifted_feature: null
+    panel_area_m2: 5.5155
+    sunshine_hours: 0.0258
+    temp_c: 0.0321
+    dust_days: 0.0071
+    panel_age_yr: 0.0127
+    cloud_cover_pct: 0.0189
+  most_drifted_feature: panel_area_m2
   mae_by_group:
-    Old City: null
-    New Colony: null
-    Industrial: null
-  worst_served_group: null
-  mae_v1_on_check: null
-  mae_v2_on_check: null
-  decision: null
+    Old City: 7.1265
+    New Colony: 20.9734
+    Industrial: 7.4989
+  worst_served_group: New Colony
+  mae_v1_on_check: 13.7095
+  mae_v2_on_check: 5.2443
+  decision: promoted
